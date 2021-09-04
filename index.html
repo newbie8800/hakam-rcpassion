@@ -1,121 +1,197 @@
-html, body {
-    height:100%;
-    width:100%;
-    
-    background: linear-gradient(to left, #ccffcc 0%, #ffffff 100%);
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>RCPASSION</title>
+    <!-- <meta charset="UTF-8"> -->
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="style.css" rel="stylesheet"/>
+   
 
-.header {
-    padding: 10px;
-    text-align: center;
-    background: black;
-    color: white;
-    font-size: 30px;
-  }
+</head>
+
+<body>
+    <a name="top" style="position:relative;top:-90px">  </a>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+
+
+
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
+                    <span class="sr-only">  </span>
+                    <span class="icon-bar">  </span>
+                    <span class="icon-bar">  </span>
+                    <span class="icon-bar">  </span>
+                </button> 
+                <a class="navbar-brand" href="#"><img src="img/logodef.png"></a>
+                
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse-main">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="active" href="#">Home</a></li>
+                    <li><a href="#about">About Us</a></li>                             
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
   
-.navbar {
-    background-color: black;
-    padding: 1% 0;
-    font-size: 1.2em;
-}
 
-.navbar-brand {
-    min-height: 55px;
-    padding: 0 15px 5px;
-}
+    <div id="home">
 
-.navbar-default .navbar-nav li a {
-    color: #D5D5D5;
-}
-
-.navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a.active {
-    color: #FFF;
-}
+       
 
 
+        <video autoplay muted loop id="myVideo"> 
+            <source src="img/intro.mp4" type="video/mp4">
+             </video>
 
-#home {
-    
-    display: table;
-    height: 100%;
-    position: relative;
-    /* background-position:center; */
-    width: 100%;
-    background-size: cover;
+        <div class="landing-text">         
 
-}
+            <h1>RCPASSION</h1>
+            <h3>Hobby Store</h3>
+            
+      
+        </div>
+    </div>
 
-#myVideo {
+    <br>
 
-    right: 0; 
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: 1;
-    position: absolute; /*  */
+    <div class="padding">
 
-  }
+      
 
-.landing-text {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-}
 
-.landing-text h1 {
-    font-size: 500%;
-    font-weight: 700;
-}
+        <div class="container">
 
-.padding {
-    padding: 80px 0;
-}
 
-.padding img {
-    width: 100%;
-}
 
-#fixed {
-    background: url(img/wall.jpg) no-repeat center center fixed;
-    display: table;
-    height: 60%;
-    position: relative;
-    width: 100%;
-    background-size: cover;
-}
+            
+            <div class="row">
 
-footer {
-    width: 100%;
-    background-color: black;
-    padding: 5% 5% 10% 5%;
-    color: #FFF;
-}
+                
 
-.fa {
-    padding:15px;
-    font-size: 25px;
-    color: #FFF;
-}
+                <div class="col-sm-6">
+                   
+                    <img src="img/RC.jpg">
+                </div>
+                <div class="col-sm-6 text-center">
+                    <a name="about" style="position:relative;top:-90px">  </a>
+                    
+                    <div class="header">  <h2>About us</h2> </div>
+                    <p class="lead">Hobby store that encompasses the Remote/Radio Control car in the RC universe.</p>
+                    <p class="lead"> 
 
-.fa:hover {
-    color: #D5D5D5;
-    text-decoration: none;
-}
+                        To supply the race driver behind the controller, ranging from: car kits, parts, tyre & insertwheel, body shell, batteries, E-S-C, motors, 
+                        servo, engine, radio system to accessories,tools and chargers.
+                        
+                        You are your own enginner. Racer is in you.
+                        </p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-.icon {
-    max-width: 200px;
-}
+    <div class="padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" >
+                    <div class="header"> <h4>The Crew</h4></div>
+                   <p>A fan of RCPASSION. Become a crew or form your own crew.  </p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"> 
+                    <img src="img/thecrew.jpg" class="img-responsive">
+                </div>
+                <p></p>
+                <p></p>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"> 
+                    <div class="header"> <h4>The Track</h4></div>
+                    <p> Boost and drift through the track of stadium rc race track. Unleash your skills!!</p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"> 
+                    <img src="img/thetrack.jpg" class="img-responsive">
+                </div>
+            </div>
+        </div>
+        
+    </div>
 
-@media (max-width: 760px) {
-    .landing-text h1 {
-        font-size: 300%;
-    }
-    .fa {
-        font-size: 20px;
-        padding: 10px;
-    }
-    .icon {
-        padding-top: 5%;
-        max-width: 100px;
-    }
-}
+    <div id="fixed">
+
+    </div>
+
+    <div class="padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="header"><h4>The Happenings</h4></div>
+                    <p>Where the magic happens. Shop for the parts needed for your next race. Stratergize your smart buy!!
+                    </p>
+                    <p>Potential upgrade, tweaks and Tips from the trade.
+                    </p>
+                </div>
+                <div class="col-sm-6">
+                    <img src="img/bay.JPG">
+                </div>  
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="container-fluid text-center">
+        <div class="row">
+            <div class="col-sm-4">
+                <a name="contact" style="position:relative;top:-90px">  </a>
+                <h3>Contact us</h3>
+                <br>
+                <h4>Our address and contact info here.</h4>
+                <br>
+                No: 39A, First Floor, Airport Berakas, Bandar Seri Begawan, Brunei
+                <p></p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974.996661599138!2d114.93762301476336!3d4.940194096413423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3222f5a55f531dcb%3A0xc6f0582986408b3a!2sThe%20Airport%20Mall!5e0!3m2!1sen!2sbn!4v1630740084749!5m2!1sen!2sbn" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+            </div>
+            <div class="col-sm-4">
+                <h3>Connect</h3>
+                <a href="https://www.facebook.com/RCPASSIONBN/" class="fa fa-facebook"></a>
+               
+                
+                <a href="https://www.instagram.com/rcpassionbn/" class="fa fa-instagram"></a>
+                
+
+            </div>
+
+            <div class="col-sm-4">
+                
+                <h3>Catalogue </h3>
+               <br>
+                <a href="https://rcpassionbn.com/"><img src="img/web.JPG" alt="the shop" style="width:45%;height:18%;"></a>
+                <br>
+                <hr>
+                <br>
+                <h3>Store </h3>
+                <h4>RCpassion Enterprise</h4>
+                <br>
+                &
+                <br>
+
+
+            No 4,First Floor, Block E, Sempurna Complex, Jalan Batu Besurat, Kg Pengkalan Gadong, Brunei-muara, BE3719
+            </div>
+
+        </div>
+        <br>
+         <a href="#top">Top</a>
+        <p></p>
+        <small>&copy; Copyright 2021, Karya Digital</small>
+    </footer>
+
+</body>
+</html>
