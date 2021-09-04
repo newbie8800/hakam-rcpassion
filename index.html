@@ -1,156 +1,121 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>RCPASSION</title>
-    <meta charset="UTF-8"> 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link href="style.css" rel="stylesheet"/>
-   
+html, body {
+    height:100%;
+    width:100%;
+    
+    background: linear-gradient(to left, #ccffcc 0%, #ffffff 100%);
+}
 
-</head>
-
-<body>
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
-                    <span class="sr-only">  </span>
-                    <span class="icon-bar">  </span>
-                    <span class="icon-bar">  </span>
-                    <span class="icon-bar">  </span>
-                </button> 
-                <a class="navbar-brand" href="#"><img src="img/logodef.png"></a>
-                
-            </div>
-            <div class="collapse navbar-collapse" id="navbar-collapse-main">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a class="active" href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
+.header {
+    padding: 10px;
+    text-align: center;
+    background: black;
+    color: white;
+    font-size: 30px;
+  }
   
+.navbar {
+    background-color: black;
+    padding: 1% 0;
+    font-size: 1.2em;
+}
 
-    <div id="home">
+.navbar-brand {
+    min-height: 55px;
+    padding: 0 15px 5px;
+}
 
-        <video autoplay muted loop id="myVideo"> 
-            <source src="img/intro.mp4" type="video/mp4">
-             </video>
+.navbar-default .navbar-nav li a {
+    color: #D5D5D5;
+}
 
-        <div class="landing-text">         
-
-            <h1>RCPASSION</h1>
-            <h3>Hobby Store</h3>
-            <!-- background: url(img/mountains.jpeg) no-repeat center center fixed; -->
-      
-        </div>
-    </div>
-
-   
-
-    <div class="padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <img src="img/RC.jpg">
-                </div>
-                <div class="col-sm-6 text-center">
-                    <h2>RCpassion</h2>
-                    <p class="lead">Hobby store that encompasses the Remote/Radio Control car in the RC universe.</p>
-                    <p class="lead"> 
-
-                        To supply the race driver behind the controller, ranging from: car kits, parts, tyre & insertwheel, body shell, batteries, E-S-C, motors, 
-                        servo, engine, radio system to accessories,tools and chargers.
-                        
-                        You are your own engineer. Racer is in you.
-                        </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" >
-                   <h4>The crew</h4>
-                   <p>A fan of RCPASSION. Become a crew or form your own crew  </p>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"> 
-                    <img src="img/thecrew.jpg" class="img-responsive">
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"> 
-                    <h4>The track</h4>
-                    <p> Boost and drift through the track of stadium rc race track. Unleash your skills!!</p>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"> 
-                    <img src="img/thetrack.jpg" class="img-responsive">
-                </div>
-            </div>
-        </div>
-        
-    </div>
-
-    <div id="fixed">
-
-    </div>
-
-    <div class="padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <h4>The happenings</h4>
-                    <p>Where the magic happens. Shop for the parts needed for your next race. Stratergize your smart buy!!
-                    </p>
-                    <p>Potential upgrade, tweaks and Tips from the trade.
-                    </p>
-                </div>
-                <div class="col-sm-6">
-                    <img src="img/bay.JPG">
-                </div>  
-            </div>
-        </div>
-    </div>
+.navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a.active {
+    color: #FFF;
+}
 
 
-    <footer class="container-fluid text-center">
-        <div class="row">
-            <div class="col-sm-4">
-                <h3>Contact us</h3>
-                <br>
-                <h4>Our address and contact info here.</h4>
-            </div>
-            <div class="col-sm-4">
-                <h3>Connect</h3>
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-google"></a>
-                <a href="#" class="fa fa-linkedin"></a>
-                <a href="#" class="fa fa-youtube"></a>
 
-            </div>
+#home {
+    
+    display: table;
+    height: 100%;
+    position: relative;
+    /* background-position:center; */
+    width: 100%;
+    background-size: cover;
 
-            <div class="col-sm-4">
-               
-                <a href="https://rcpassionbn.com/"><img src="img/web.JPG" alt="the shop" style="width:45%;height:18%;"></a>
-            </div>
+}
 
-        </div>
-        <br>
-        <p>
-       <small>&copy; Copyright 2021, Karya Digital, hakam286@gmail.com</small> 
-        </p>
-    </footer>
+#myVideo {
 
-</body>
-</html>
+    right: 0; 
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 1;
+    position: absolute; /*  */
+
+  }
+
+.landing-text {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.landing-text h1 {
+    font-size: 500%;
+    font-weight: 700;
+}
+
+.padding {
+    padding: 80px 0;
+}
+
+.padding img {
+    width: 100%;
+}
+
+#fixed {
+    background: url(img/wall.jpg) no-repeat center center fixed;
+    display: table;
+    height: 60%;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+}
+
+footer {
+    width: 100%;
+    background-color: black;
+    padding: 5% 5% 10% 5%;
+    color: #FFF;
+}
+
+.fa {
+    padding:15px;
+    font-size: 25px;
+    color: #FFF;
+}
+
+.fa:hover {
+    color: #D5D5D5;
+    text-decoration: none;
+}
+
+.icon {
+    max-width: 200px;
+}
+
+@media (max-width: 760px) {
+    .landing-text h1 {
+        font-size: 300%;
+    }
+    .fa {
+        font-size: 20px;
+        padding: 10px;
+    }
+    .icon {
+        padding-top: 5%;
+        max-width: 100px;
+    }
+}
